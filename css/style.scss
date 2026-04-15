@@ -36,7 +36,7 @@ html {
 }
 
 body {
-    background-color: #aaaeaf;
+    // background-color: #76c2c2;
     color: #333;
     font-family: "Arima", "Montserrat",
         "M PLUS Rounded 1c",
@@ -148,16 +148,16 @@ img {
 // 
 
 main {
-    width: 100%; // メイン領域全体を画面幅いっぱいに
+    width: 393px; // メイン領域全体を画面幅いっぱいに
 
     .main-visual {
-        width: 100%;
+        width: 393px;
         position: relative;
 
         /* 共通設定をここにまとめるとスッキリします */
         [class^="main-visual-photo"] {
             width: 100%;
-            // height: 100%;
+            // height: 652.8px;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center; // ★ここが重要：画像の中央をセンターにする
@@ -418,6 +418,19 @@ main {
         background-position: center top;
         background-size: 100% auto;
         background-color: #191411;
+
+        h2,
+        p {
+            color: #ffffffb7;
+        }
+
+        h2::after {
+            display: block;
+            content: "";
+            width: 260px;
+            border-top: solid 1.5px #ffffffb7;
+            margin: 5px 40px 0 70px;
+        }
     }
 
     .keyframe-all {
@@ -442,6 +455,7 @@ main {
         p {
             display: block;
             white-space: nowrap;
+            line-height: 1.3;
 
             margin: 10px 0;
             padding: 0;
@@ -468,6 +482,10 @@ main {
 
         .key-05 {
             animation-delay: 3s;
+        }
+
+        .key-07 {
+            animation-delay: 1s;
         }
     }
 
@@ -515,7 +533,7 @@ main {
             font-weight: bold;
 
             color: #fff;
-            animation: flow-text 40s linear infinite;
+            animation: flow-text 50s linear infinite;
 
             /* ① 輪郭線に色を付ける (太さ / 色) */
             -webkit-text-stroke: 1.5px #ffffff;
