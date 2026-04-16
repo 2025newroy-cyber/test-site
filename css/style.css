@@ -443,26 +443,15 @@ main {
 main .main-visual {
   width: 393px;
   position: relative;
-  /* 共通設定をここにまとめるとスッキリします */
-}
-main .main-visual [class^=main-visual-photo] {
-  width: 100%;
+  background-image: url("../images/main-visual-photo-all.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  min-height: 60vh;
-}
-main .main-visual .main-visual-photo01 {
-  background-image: url("../images/hero-photo01.jpg");
-}
-main .main-visual .main-visual-photo02 {
-  background-image: url("../images/hero-photo02.jpg");
-  /* 下の画像が上に被るように見える場合、マージンで調整します */
-  margin-top: 0;
+  background-size: cover;
+  height: 593px;
 }
 main .main-visual .main-visual-title {
   position: absolute;
-  top: 42px;
+  top: 10px;
   left: 20px;
   white-space: nowrap;
   writing-mode: vertical-rl;
@@ -476,11 +465,11 @@ main .main-visual .main-visual-title {
 }
 main .main-visual .main-visual-logo-overlap {
   position: absolute;
-  top: 44%;
-  right: 20%;
+  top: 42%;
+  right: 10%;
   width: 120px;
   height: auto;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 20;
 }
 main .keyframe01 {
